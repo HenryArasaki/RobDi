@@ -10,6 +10,7 @@ document.addEventListener('keydown', function () {
     }
 })
 
+
 scoreText = document.getElementById("score")
 btnLeft = document.getElementById("btnDil")
 btnRight = document.getElementById("btnDir")
@@ -23,7 +24,7 @@ inputDi = 0
 gameRunning = false
 
 function start() {
-    document.getElementById("titulo").style.color = "black"
+    document.getElementById("titulo").style.color = "white"
     scoreText.innerText = score
     gameRunning = true
     btnRight.classList.remove("btnSelected")
@@ -64,7 +65,8 @@ function screenNext() {
     gameRunning = false;
     clip.style.visibility = "hidden";
     btnStart.style.visibility = "visible"
-    btnStart.innerText = "Next Level"
+    btnStart.innerText = "Boa, acertou"
+
 }
 
 function gameOver() {
@@ -72,8 +74,9 @@ function gameOver() {
     gameRunning = false;
     clip.style.visibility = "hidden";
     btnStart.style.visibility = "visible"
-    btnStart.innerText = "Try Again"
+    btnStart.innerText = "Lixo, errou o DI"
     score = 0
+
 }
 
 //funções do start

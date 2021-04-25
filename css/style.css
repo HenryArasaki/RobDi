@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Antonio', sans-serif;
+    background-color: #1f1f1f;
 }
 
 #game{
@@ -42,6 +44,8 @@ body button{
     margin-right: 30%;
     text-align: center;
     justify-content: center;
+    border: white solid 1px;
+    color:white;
 }
 
 #startBtn{
@@ -70,7 +74,9 @@ body button{
 }
 
 .btnSelected{
-    background-color: green;
+    background-color: white;
+    color: black;
+    border: black 1px solid;
 }
 
 #titulo{
@@ -78,9 +84,14 @@ body button{
     justify-content: center;
     align-items: center;
     text-align: center;
+    color:white;
+}
+h2{
+    color:white;
 }
 h3{
-    font-size:0.9em;   
+    font-size: 1em;
+    color:white;
 }
 @media screen and (min-width:980px) {
     #clip{
@@ -96,4 +107,6 @@ h3{
     margin-left: 50%;
     margin-right: 50%;
     bottom: 30px;
+    color: white;
 }
+
