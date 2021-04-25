@@ -79,6 +79,9 @@ body button{
     align-items: center;
     text-align: center;
 }
+h3{
+    font-size:0.9em;   
+}
 @media screen and (min-width:980px) {
     #clip{
         width: 60%;
