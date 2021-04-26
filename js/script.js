@@ -25,6 +25,7 @@ gameRunning = false
 
 function start() {
     document.getElementById("titulo").style.color = "white"
+    document.getElementById("titulo").style.visibility = "hidden"
     scoreText.innerText = score
     gameRunning = true
     btnRight.classList.remove("btnSelected")
@@ -47,7 +48,6 @@ function randomClip() {
 }
 
 function checkDi() {
-    document.getElementById("titulo").style.color = "red"
     if (inputDi == currentClip['di']) {
         console.log("ta certo")
         setTimeout(screenNext, 2000)
@@ -65,7 +65,10 @@ function screenNext() {
     gameRunning = false;
     clip.style.visibility = "hidden";
     btnStart.style.visibility = "visible"
-    btnStart.innerText = "Boa, acertou"
+    document.getElementById("titulo").style.visibility = "visible"
+    document.getElementById("titulo").innerText = "Boa, acertou o DI"
+    document.getElementById("titulo").style.color = "#7FFF00"
+    btnStart.innerText = "Next Level"
 
 }
 
@@ -74,7 +77,10 @@ function gameOver() {
     gameRunning = false;
     clip.style.visibility = "hidden";
     btnStart.style.visibility = "visible"
-    btnStart.innerText = "Lixo, errou o DI"
+    btnStart.innerText = "Try Again"
+    document.getElementById("titulo").innerText = "Lixo, errou o DI"
+    document.getElementById("titulo").style.visibility = "visible"
+    document.getElementById("titulo").style.color = "red"
     score = 0
 
 }
